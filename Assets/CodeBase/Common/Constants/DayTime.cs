@@ -1,7 +1,7 @@
 ﻿namespace CodeBase.Common.Constants
 {
-    public class DayTime
+    public abstract class DayTime
     {
-        
+        public const int DayHours = 24;
     }
 }
