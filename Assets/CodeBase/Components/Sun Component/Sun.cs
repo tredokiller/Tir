@@ -3,6 +3,7 @@ using Color = UnityEngine.Color;
 
 namespace CodeBase.Components.Sun_Component
 {
+    [ExecuteInEditMode]
     public class Sun : MonoBehaviour
     {
         private Light _sunLight;
