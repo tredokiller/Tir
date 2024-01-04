@@ -15,6 +15,10 @@ namespace CodeBase.Components.Sun_Component
         
         public void RotateSun(float rotation)
         {
+            if (_sunLight == null)
+            {
+                 return;                
+            }
             _sunLight.transform.rotation = Quaternion.Euler(rotation, _sunLight.transform.rotation.y, _sunLight.transform.rotation.z);
         }
 

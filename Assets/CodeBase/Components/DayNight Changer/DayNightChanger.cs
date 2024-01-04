@@ -62,7 +62,7 @@ namespace CodeBase.Components.DayNight_Changer
             RenderSettings.ambientEquatorColor = horizonGradient
                 .Evaluate(timeFraction);
             
-            sun.SetColor(sunGradient.Evaluate(timeFraction));
+            sun?.SetColor(sunGradient.Evaluate(timeFraction));
         }
 
         private void SetCurrentTime()
