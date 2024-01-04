@@ -9,23 +9,24 @@ namespace CodeBase.Components.DayNight_Changer
 {
     public class DayNightChanger : MonoBehaviour
     {
-        [Header("Sun")] 
-        [SerializeField] private Sun sun;
+        [Header("Sun")] [SerializeField] private Sun sun;
 
-        [Header("Parameters")] 
-        [SerializeField] private DayNightConfig dayNightConfig;
+        [Header("Parameters")] [SerializeField]
+        private DayNightConfig dayNightConfig;
+
         [SerializeField, Range(0, 24)] private float currentTime;
         [SerializeField] private float sunRotationSpeed;
-        
-        [Header("Lighting Presets")] 
-        [SerializeField] private Gradient skyGradient;
+
+        [Header("Lighting Presets")] [SerializeField]
+        private Gradient skyGradient;
+
         [SerializeField] private Gradient horizonGradient;
         [SerializeField] private Gradient sunGradient;
 
         private void Update()
         {
             SetCurrentTime();
-            
+
             UpdateSunRotation();
             UpdateLightning();
         }
@@ -40,15 +41,15 @@ namespace CodeBase.Components.DayNight_Changer
         {
             var sunRotation = Mathf.Lerp(dayNightConfig.minSunRotationValue, dayNightConfig.maxSunRotationValue,
                 currentTime / DayTime.DayHours);
-            
+
             RotateSun(sunRotation);
         }
 
         private void UpdateLightning()
         {
             var timeFraction = currentTime / DayTime.DayHours;
-            
-           SetLightGradients(timeFraction);
+
+            SetLightGradients(timeFraction);
         }
 
         private void RotateSun(float rotation)
@@ -58,11 +59,14 @@ namespace CodeBase.Components.DayNight_Changer
 
         private void SetLightGradients(float timeFraction)
         {
+            if (sun == null)
+                return;
+            
             RenderSettings.ambientSkyColor = skyGradient.Evaluate(timeFraction);
             RenderSettings.ambientEquatorColor = horizonGradient
                 .Evaluate(timeFraction);
-            
-            sun?.SetColor(sunGradient.Evaluate(timeFraction));
+
+            sun.SetColor(sunGradient.Evaluate(timeFraction));
         }
 
         private void SetCurrentTime()
@@ -72,6 +76,7 @@ namespace CodeBase.Components.DayNight_Changer
                 currentTime = 0;
                 return;
             }
+
             currentTime += Time.deltaTime * sunRotationSpeed;
         }
     }
