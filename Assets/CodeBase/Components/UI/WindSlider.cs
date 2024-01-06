@@ -1,35 +1,45 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using CodeBase.Common.Configs;
+using CodeBase.Services.TerrainDataService;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WindSlider : MonoBehaviour
+namespace CodeBase.Components.UI
 {
-    public TerrainData[] terrains;
-    
-    private Slider _slider;
-    
-    private void Awake()
+    public class WindSlider : MonoBehaviour
     {
-        _slider = GetComponent<Slider>();
-    }
+        [SerializeField] private TerrainDataService _terrainDataService;
+        [SerializeField] private TerrainsConfig _terrainsConfig;
+        
+        private Slider _slider;
 
-    private void OnEnable()
-    {
-        _slider.onValueChanged.AddListener(SetGrassWavingSpeed);
-    }
-
-    private void OnDisable()
-    {
-        _slider.onValueChanged.RemoveListener(SetGrassWavingSpeed);
-    }
-
-    private void SetGrassWavingSpeed(float value)
-    {
-        foreach (var terrain in terrains)
+        private void Awake()
         {
-            terrain.wavingGrassSpeed = value;
+            _slider = GetComponent<Slider>();
+            
+            SetDefaultValue();
+        }
+
+        private void OnEnable()
+        {
+            _slider.onValueChanged.AddListener(SetGrassParameters);
+        }
+
+        private void OnDisable()
+        {
+            _slider.onValueChanged.RemoveListener(SetGrassParameters);
+        }
+
+        private void SetDefaultValue()
+        {
+            _slider.value = _terrainsConfig.defaultGrassWavingSpeed;
+            _terrainDataService.SetWavingGrassSpeed(_terrainsConfig.defaultGrassWavingSpeed);
+        }
+
+        private void SetGrassParameters(float value)
+        {
+            _terrainDataService.SetWavingGrassSpeed(value);
+            _terrainDataService.SetWavingGrassStrength(value);
+            _terrainDataService.SetWavingGrassAmount(value);
         }
     }
 }
