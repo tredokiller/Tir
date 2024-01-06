@@ -1,4 +1,4 @@
-using CodeBase.Components.Time_Changing;
+using Terrain.CodeBase.Components.Time_Changing;
 using UnityEngine;
 using UnityEngine.UI;
 

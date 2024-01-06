@@ -3,7 +3,7 @@ using CodeBase.Common.Constants;
 using CodeBase.Components.Sun_Component;
 using UnityEngine;
 
-namespace CodeBase.Components.Time_Changing
+namespace Terrain.CodeBase.Components.Time_Changing
 {
     [ExecuteInEditMode]
     public class DayNightChanger : MonoBehaviour
@@ -11,8 +11,8 @@ namespace CodeBase.Components.Time_Changing
         [Header("Sun")] 
         [SerializeField] private Sun sun;
 
-        [Header("Skybox")] [SerializeField] 
-        private Material skybox;
+        [Header("Skybox")] 
+        [SerializeField] private Material skybox;
 
         [Header("Parameters")] 
         [SerializeField] private DayNightConfig dayNightConfig;
