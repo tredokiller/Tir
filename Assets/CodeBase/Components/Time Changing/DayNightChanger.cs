@@ -11,6 +11,9 @@ namespace CodeBase.Components.Time_Changing
         [Header("Sun")] 
         [SerializeField] private Sun sun;
 
+        [Header("Skybox")] [SerializeField] 
+        private Material skybox;
+
         [Header("Parameters")] 
         [SerializeField] private DayNightConfig dayNightConfig;
         [SerializeField] private float sunRotationSpeed;
@@ -35,6 +38,7 @@ namespace CodeBase.Components.Time_Changing
         {
             UpdateSunRotation();
             UpdateLightning();
+            UpdateSkyboxLightning();
         }
         
         public void SetCurrentTime(float value)
@@ -49,6 +53,7 @@ namespace CodeBase.Components.Time_Changing
             
             UpdateSunRotation();
             UpdateLightning();
+            UpdateSkyboxLightning();
         }
 
         private void UpdateSunRotation()
@@ -64,6 +69,12 @@ namespace CodeBase.Components.Time_Changing
             var timeFraction = currentTime / DayTime.DayHours;
 
             SetLightGradients(timeFraction);
+        }
+
+        private void UpdateSkyboxLightning()
+        {
+            float dayExposure = Mathf.Clamp01(Mathf.Sin((currentTime - 6f) / 12f * Mathf.PI) * 0.5f + 0.5f);
+            skybox.SetFloat(SkyboxProperties.Exposure, Mathf.Lerp(0.15f, 1f, dayExposure));
         }
 
         private void RotateSun(float rotation)
@@ -94,6 +105,7 @@ namespace CodeBase.Components.Time_Changing
             
             UpdateSunRotation();
             UpdateLightning();
+            UpdateSkyboxLightning();
         }
     }
 }
