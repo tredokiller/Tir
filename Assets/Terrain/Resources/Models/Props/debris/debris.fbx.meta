@@ -1,0 +1,674 @@
+fileFormatVersion: 2
+guid: 07f93bea486580b4cb2971a8e8ac60cd
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock_IN
+    second: {fileID: 2100000, guid: 31aa35eb91d1e31469b066fea4e12b6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel Rust 02
+    second: {fileID: 2100000, guid: 06162d03793f032469c5ab4df651ac07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06
+    second: {fileID: 2100000, guid: f7f8d39c14da12b459a38ef13ba312ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.102
+    second: {fileID: 2100000, guid: 3617619c444aaf74cb5acf094a9dd47e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.108
+    second: {fileID: 2100000, guid: cef4d40d0b7f0974aa827013da763911, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.114
+    second: {fileID: 2100000, guid: f646338eb7ad0df4785c5676bff8927e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.12
+    second: {fileID: 2100000, guid: 96e2b8bbb4bbf1348840490aa79cbd51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.120
+    second: {fileID: 2100000, guid: 6fe3e495b75091341abf6d262ddb1c9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.126
+    second: {fileID: 2100000, guid: 3f5a12991cac60e45a28fbf8b9aa46e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.132
+    second: {fileID: 2100000, guid: 293f359ab71425e45bad6b1b76ed300e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.138
+    second: {fileID: 2100000, guid: ab7fcfed6a01ede4b883adefb5f31a12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.144
+    second: {fileID: 2100000, guid: 8f11df584d0122c41b6080fd8498a861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.150
+    second: {fileID: 2100000, guid: 8177aa33ba5e90644b7ff0c0561b7ff4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.156
+    second: {fileID: 2100000, guid: a9b78c91a70988f439918dc5666694f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.162
+    second: {fileID: 2100000, guid: 7b0a7276e1b430f49a54b1c5700a8773, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.168
+    second: {fileID: 2100000, guid: e3697f2912788904ba988ebe7854628a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.174
+    second: {fileID: 2100000, guid: fd4af9cbecb21b54a94f1620cb004fe8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.18
+    second: {fileID: 2100000, guid: 01836422d032f794381d3638595fc737, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.180
+    second: {fileID: 2100000, guid: ef10d7ce5a7eff543a8a0796842d404f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.186
+    second: {fileID: 2100000, guid: 1abb78173e3526b4b8109e80ace99d30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.192
+    second: {fileID: 2100000, guid: 32ba87f697aecbe4fb076c117c759c03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.198
+    second: {fileID: 2100000, guid: 7a097284c5ca9c142bca5ee45a9f12c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.204
+    second: {fileID: 2100000, guid: a935732514fcf784f94c372a80278bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.208
+    second: {fileID: 2100000, guid: c7f736a2a04436d41b6cae8351963b28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.210
+    second: {fileID: 2100000, guid: 87a9cac218b84cc4d91de071072f20a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.214
+    second: {fileID: 2100000, guid: c850bab835bd5a348a78b8ff767eb3a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.216
+    second: {fileID: 2100000, guid: 4dc6d345bb9de9846a682b42dbed2b4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.220
+    second: {fileID: 2100000, guid: 21e873e89b06aa94296dcb86b632ac38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.222
+    second: {fileID: 2100000, guid: e87853a6a0a716f4aa87b0ecc393c2fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.226
+    second: {fileID: 2100000, guid: 4782dfe4c029793478749b37e1ca51b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.228
+    second: {fileID: 2100000, guid: fe186893dae0ef042865cf49fedf291a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.232
+    second: {fileID: 2100000, guid: e369247c047fb31478daaeb63604a038, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.234
+    second: {fileID: 2100000, guid: b33575644d1359b4db56fcd1cc2fbfa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.238
+    second: {fileID: 2100000, guid: 3355b6763da8419478fd9427e31a0265, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.24
+    second: {fileID: 2100000, guid: bd422fc86ddb0e944a1869dd69a18f53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.240
+    second: {fileID: 2100000, guid: c331ba6251eeb6f47977eeec471de437, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.244
+    second: {fileID: 2100000, guid: 888f447e11401c544b188cd3dc236192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.246
+    second: {fileID: 2100000, guid: d677f55bc0d67044ca02f91e2a3990df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.250
+    second: {fileID: 2100000, guid: e21a4b6cf0413604c930f9c589d21fe2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.252
+    second: {fileID: 2100000, guid: 23f65362a56d52040bcbdf8695da990a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.256
+    second: {fileID: 2100000, guid: dc3ad66c0fef7a74ea9d014ccb1e0ed8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.258
+    second: {fileID: 2100000, guid: fb4c82a6fdd58564f94e29ef91945930, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.262
+    second: {fileID: 2100000, guid: 8575902a9184c2546998bc63df2f280b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.264
+    second: {fileID: 2100000, guid: e0a69ee47e4020c4a9b55d9c00a34c44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.268
+    second: {fileID: 2100000, guid: 377fa56b62b193e4782f9d4ef353723c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.270
+    second: {fileID: 2100000, guid: df1ce9def18a4404f87e0fc5ac11df3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.274
+    second: {fileID: 2100000, guid: 8ee5aa9f3404a8f468aaf9f4ad548db2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.276
+    second: {fileID: 2100000, guid: 57c22b923874aa04b8c08199cfde5939, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.280
+    second: {fileID: 2100000, guid: 7adc98aa48b67b04ca2a81c648042ebf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.282
+    second: {fileID: 2100000, guid: 5dd54ed60dcf0584aab90bda31c74f44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.286
+    second: {fileID: 2100000, guid: ed634648456c77b4c97b5e5429796b43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.288
+    second: {fileID: 2100000, guid: 19b4c9185da7ff94ea97e236b3a720c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.292
+    second: {fileID: 2100000, guid: 83cd57c011e06b04e87bdddc08f370fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.294
+    second: {fileID: 2100000, guid: 9a505ce9525276c4f858c665255c1354, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.298
+    second: {fileID: 2100000, guid: 8abe2029a61e2514496938ecd19b85f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.30
+    second: {fileID: 2100000, guid: 372e06f292889df43bd746e7ade5708a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.300
+    second: {fileID: 2100000, guid: de7c63d848574064f89ee334b4039ef5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.304
+    second: {fileID: 2100000, guid: 82a58993de9db6244b7dbe2d6eaca8b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.306
+    second: {fileID: 2100000, guid: 9932972644205b3479087014abc80141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.310
+    second: {fileID: 2100000, guid: 26da081fc28217547893b83b5f3ac34c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.312
+    second: {fileID: 2100000, guid: f5d31c7548d3f6d4a9062bbb0f1e08d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.316
+    second: {fileID: 2100000, guid: 12a832e0bcb97a842b50ffaf58035b23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.318
+    second: {fileID: 2100000, guid: 34774638aa06d8c44844cb8c782d2014, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.322
+    second: {fileID: 2100000, guid: beccee232a75d804881573dd8484938e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.324
+    second: {fileID: 2100000, guid: 3cfe6ce9c2d86fa41805932f25bf1ea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.328
+    second: {fileID: 2100000, guid: ee8a7c98d7dac304d9d5a7b8eab54aaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.330
+    second: {fileID: 2100000, guid: 4feb60ef9e7876e49b95ae6edf3af07d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.334
+    second: {fileID: 2100000, guid: 16c1a580d9d831044bd6de9fd74a95e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.336
+    second: {fileID: 2100000, guid: 688cca548be7d1a4ead8ea496d280da0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.340
+    second: {fileID: 2100000, guid: b15695900e7cf9d45848860b5cbe3756, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.342
+    second: {fileID: 2100000, guid: 5f908d30dc5a05b4bbf06131fb3142a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.346
+    second: {fileID: 2100000, guid: 48f354fe45d4c7d41b71daf61192ad64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.348
+    second: {fileID: 2100000, guid: 7cb8fb7c46550724f937e7e9d96e355d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.352
+    second: {fileID: 2100000, guid: a5585b9099c90704fa93134b7cc9f1b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.354
+    second: {fileID: 2100000, guid: 1d1cb06239b73f2418dcd54ed4c9e1b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.358
+    second: {fileID: 2100000, guid: c90cbec8b1c23014088e4fedc29d31c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.36
+    second: {fileID: 2100000, guid: c75b8cb4fe9fee04ab1bb9513f77feb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.360
+    second: {fileID: 2100000, guid: e5ce9ecb39265ee43b17364fedceb101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.364
+    second: {fileID: 2100000, guid: 23026555039ffff41810a130208aa610, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.366
+    second: {fileID: 2100000, guid: b7f03d2d4a263cf438831ae405221e56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.370
+    second: {fileID: 2100000, guid: cbb9aff31391d9340ad80794f31809a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.372
+    second: {fileID: 2100000, guid: ed6cc5b538022984a9d85f3b03c0ed10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.376
+    second: {fileID: 2100000, guid: e40a8261ccb42bc408ba186ba7dd5c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.378
+    second: {fileID: 2100000, guid: 6847616b03d279f4b9dc1f60b37b13a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.382
+    second: {fileID: 2100000, guid: ec85d74c2361b59429efd852203ae6d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.384
+    second: {fileID: 2100000, guid: 816edd4a9a282954c8fc15a83c479790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.388
+    second: {fileID: 2100000, guid: 90124aa40e71a7b46abab3eb26ed9303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.390
+    second: {fileID: 2100000, guid: 422b250d76c487c4cb3f33ddb2da0558, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.394
+    second: {fileID: 2100000, guid: 7ff0a75d69110674b9e2e6b855f69e2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.396
+    second: {fileID: 2100000, guid: d7946713ba4caea438c11399b81a1cae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.4
+    second: {fileID: 2100000, guid: 78c2e7056d8d3f24c81b2bcc5ca6be83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.400
+    second: {fileID: 2100000, guid: ff3b0cfdcfcd30240bbd33242666872a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.402
+    second: {fileID: 2100000, guid: 34e434af35befcf4db99503a0cb21b6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.406
+    second: {fileID: 2100000, guid: ad92f4c75593dbc449cd6cf0cf4709c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.408
+    second: {fileID: 2100000, guid: d1afdfe87b97f734e968f80d7efefe4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.412
+    second: {fileID: 2100000, guid: 3321768b94095d849ad7c69c0cd492e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.414
+    second: {fileID: 2100000, guid: f114f15eefd756343ae4209d27681f08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.418
+    second: {fileID: 2100000, guid: f5227c328acb8164d9100216743d0e57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.42
+    second: {fileID: 2100000, guid: dbeaeaaa456dc314c957757a85e17c25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.48
+    second: {fileID: 2100000, guid: e0855b68f9a4c554a9787369256a4346, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.54
+    second: {fileID: 2100000, guid: 78f58b9d9dffe8249993c58641d1fad0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.6
+    second: {fileID: 2100000, guid: ceb8cb87b5b2b104584fe20c745e3217, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.60
+    second: {fileID: 2100000, guid: 52b289d3a11ab034eabc21671b359672, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.66
+    second: {fileID: 2100000, guid: c1aef0f9773c61e4c94181e37d9e5f09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.72
+    second: {fileID: 2100000, guid: 2a65bf22add33084587f7fee2383210c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.78
+    second: {fileID: 2100000, guid: f34dd480723da0e4ca7b3ec73511dc2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.84
+    second: {fileID: 2100000, guid: b34034ddc7e78964985f8622eb20fcdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.90
+    second: {fileID: 2100000, guid: b0a2a9b0c2a966647bf2d22aa856eeb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Planks 06.96
+    second: {fileID: 2100000, guid: 4c3c9d6bc6763be46b383a5d280d7e7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: out
+    second: {fileID: 2100000, guid: 13aa269dd133dc240bbdbab6c096933a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rusty
+    second: {fileID: 2800000, guid: 5e58905bc98890548a666dfa50fbcddd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: stone(out)
+    second: {fileID: 2800000, guid: 833cd234fd6b7de4bb1276b484b76edf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: 59047175fcd9c694693bbc701041c843, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
