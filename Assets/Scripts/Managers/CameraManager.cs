@@ -8,11 +8,15 @@ namespace Managers
     {
         public static CameraManager instance;
         public Camera Camera { private set; get; }
+
+        private EventsManager _eventsManager;
         
         private void Awake()
         {
             instance = this;
             Camera = GetComponent<Camera>();
+            
+            _eventsManager = EventsManager.instance;
         }
     }
 }

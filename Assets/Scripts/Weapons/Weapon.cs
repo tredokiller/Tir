@@ -1,6 +1,7 @@
 using Common;
 using DG.Tweening;
 using Interfaces;
+using Managers;
 using UnityEngine;
 
 namespace Weapons
@@ -10,6 +11,8 @@ namespace Weapons
         private WeaponData _weaponData;
 
         private SpaceRaycaster _spaceRaycaster;
+        private LevelManager _levelManager;
+        private SoundsManager _soundsManager;
         
         private int _currentAmmo;
         private bool _isReloading;
@@ -17,6 +20,9 @@ namespace Weapons
 
         public void Init()
         {
+            _levelManager = LevelManager.instance;
+            _soundsManager = SoundsManager.instance;
+
             _currentAmmo = _weaponData.MaxMagazineAmmo;
             _isReloading = false;
         }
@@ -30,6 +36,9 @@ namespace Weapons
         {
             if (CanShoot())
             {
+                _soundsManager.PlaySound(_weaponData.FireSound);
+                _levelManager.shots += 1;
+                
                 _currentAmmo -= 1;
                 SpawnBullet();
                 
@@ -40,6 +49,11 @@ namespace Weapons
         
         public void Reload()
         {
+            if (_isReloading)
+            {
+                return;
+            }
+            _soundsManager.PlaySound(_weaponData.ReloadSound);
             _isReloading = true;
             DOVirtual.DelayedCall(_weaponData.ReloadTime, OnReloaded);
         }

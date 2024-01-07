@@ -14,6 +14,8 @@ public class RotateArrow : MonoBehaviour, IInteractable
     [SerializeField] private Transform elementsTransform;
     [SerializeField] private float angleToMove = 0;
 
+    [SerializeField, Range(0, 100)] private float newCameraFOV = 60;
+
     private void Awake()
     {
         _eventsManager = EventsManager.instance;
@@ -62,6 +64,7 @@ public class RotateArrow : MonoBehaviour, IInteractable
     {
         var newRotation = _cameraManager.Camera.transform.localRotation.eulerAngles;
         newRotation.y = angleToMove;
+        
         _cameraManager.Camera.transform.DORotate(newRotation, 0.5f);
     }
     

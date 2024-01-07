@@ -19,6 +19,6 @@ MonoBehaviour:
   bulletMass: 0.01
   bulletPrefab: {fileID: 2920808380871029569, guid: 5ce1ac95a6bce474bb86b1de3c8a2fbe,
     type: 3}
-  fireSound: {fileID: 0}
-  reloadSound: {fileID: 0}
+  fireSound: {fileID: 8300000, guid: f05ac6786ac0e714b8025d650218023a, type: 3}
+  reloadSound: {fileID: 8300000, guid: 16efbf4ea5addab4e9bfd9142b093820, type: 3}
   zeroAmmoSound: {fileID: 0}

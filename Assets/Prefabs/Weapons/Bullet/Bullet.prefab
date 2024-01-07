@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6412833778092024465}
   - component: {fileID: 6698755097293665696}
   - component: {fileID: 6117525185720989977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5456124462700792370}
   - component: {fileID: 7144131007686028587}
   - component: {fileID: 6209109848776177775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ CapsuleCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.44
-  m_Height: 2
+  m_Radius: 0.84
+  m_Height: 1.13
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

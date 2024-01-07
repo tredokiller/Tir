@@ -52,7 +52,7 @@ namespace Weapons
         private void Update()
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 2f, bulletMask))
+            if (Physics.SphereCast(transform.position, 0.35f,transform.forward,  out hit, 0.5f, bulletMask))
             {
                 var obj = hit.collider.GetComponentInParent<IDamageable>();
 
