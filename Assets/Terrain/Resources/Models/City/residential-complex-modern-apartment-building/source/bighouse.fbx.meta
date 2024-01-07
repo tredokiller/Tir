@@ -3,7 +3,112 @@ guid: 562ba23352cb9534baf6b4c6d411002a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: d089e25b8c53c384baf1605a494fea4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: dff93ed29222752408ee257e517b4bb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 919d9006afce26c40bea1562e98775fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 04 - Default
+    second: {fileID: 2100000, guid: bbb9e3945ca0cfd44bddea0a00deb185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: f732bb86058af4b4d97f9381e1122cb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 06 - Default
+    second: {fileID: 2100000, guid: 6f7aadc000a76c748ac5bdf3dc4b670f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 11 - Default
+    second: {fileID: 2100000, guid: b0f00e02a6c0f034b8497b463046e48a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Car Paint
+    second: {fileID: 2100000, guid: c4efc597d91d8034ba293ea40fdc31c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 13 - Brushed Metal #2
+    second: {fileID: 2100000, guid: 18ccab209d87aba4daedb00164a2c896, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 14 - Polished Aluminum
+    second: {fileID: 2100000, guid: 13b52ffc4ce69c642bc8b99326e6fa32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramic
+    second: {fileID: 2100000, guid: 00438c82d2eccba4fa8fca59f4706e47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: de2fa1d001996bd4cac20008717e780a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Solid Glass
+    second: {fileID: 2100000, guid: e44debe2a20bc7d4bb26b845a198fb0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall Paint
+    second: {fileID: 2100000, guid: 78271b5c1cd033042af4406adacebf47, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bricks060_2K-JPG_AmbientOcclusion
+    second: {fileID: 2800000, guid: 105a3b08d0fe4b741b7f1c588641d431, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete031_2K-JPG_Displacement
+    second: {fileID: 2800000, guid: 239cc47e2989cc44e8c84d6dd19fca7c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete040_2K-JPG_AmbientOcclusion
+    second: {fileID: 2800000, guid: f7a6c490b2edd11409aad55a9accf8db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete045_1K-JPG_AmbientOcclusion
+    second: {fileID: 2800000, guid: ca1b557bbeb033e4db7ec770f5b4ccc5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete045_1K-JPG_Color
+    second: {fileID: 2800000, guid: 3fc1beceadeaaae4a9223d3a97befc96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PavingStones133_2K-JPG_Color
+    second: {fileID: 2800000, guid: 911b23e73694b8444a9894311ea09a29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TilesSlateSquare001_DISP16_2K_METALNESS
+    second: {fileID: 2800000, guid: 103671fa8b0a3144c9173451843adf62, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
