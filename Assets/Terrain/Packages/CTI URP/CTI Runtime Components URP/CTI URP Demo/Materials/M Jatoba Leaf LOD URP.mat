@@ -8,20 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M Jatoba Leaf LOD URP
-  m_Shader: {fileID: -6465566751694194690, guid: dd5346f32d7fd23488eda10b183acc31, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: dd5346f32d7fd23488eda10b183acc31,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _LEAFTUMBLING
   - _LEAFTURBULENCE
   - _NORMALROTATION
-  m_InvalidKeywords:
-  - _BENDINGCONTROLS_TREE_CREATOR
-  - _DETAIL_MULX2
-  - _EMISSION
-  - _METALLICGLOSSMAP_LOD_TERRAIN
-  - _NORMALMAP
-  - _VFACE
+  m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
