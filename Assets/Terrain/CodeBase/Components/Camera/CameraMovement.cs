@@ -4,65 +4,76 @@ namespace Terrain.CodeBase.Components.Camera
 {
     public class CameraMovement : MonoBehaviour
     {
-        public float normalSpeed = 10f;
-        public float acceleration = 2f;
-        public float deceleration = 2f;
-        public float rotationSpeed = 100.0f;
-        public float minY = 1.0f;
-        public float maxY = 80.0f;
+        public float baseMoveSpeed = 5f;
+    public float rotateSpeed = 2f;
+    public float ascentSpeed = 5f;
+    public float sprintMultiplier = 2f;
+    public float accelerationTime = 1.5f;
 
-        private float currentSpeed;
-        private float rotationX = 0;
+    private float currentMoveSpeed;
+    private Vector3 velocity;
 
-        void Update()
+    void Update()
+    {
+        // Захват курсора и активация окна при нажатии
+        if (Input.GetMouseButtonDown(0))
         {
-            HandleMovementInput();
-            HandleRotationInput();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Application.focusChanged += OnApplicationFocus;
         }
+        // Передвижение камеры
+        MoveCamera();
 
-        void HandleMovementInput()
+        // Вращение камеры
+        RotateCamera();
+    }
+
+    void OnApplicationFocus(bool hasFocus)
+    {
+        // Сбрасываем захват курсора и видимость курсора при потере фокуса
+        if (!hasFocus)
         {
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
-
-            float speed = normalSpeed;
-
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                speed *= acceleration;
-            }
-
-            if (Input.GetKey(KeyCode.Q))
-            {
-                transform.position -= transform.up * speed * Time.deltaTime;
-            }
-
-            if (Input.GetKey(KeyCode.E))
-            {
-                transform.position += transform.up * speed * Time.deltaTime;
-            }
-
-            Vector3 moveDirection = new Vector3(horizontalInput, 0, verticalInput).normalized;
-
-            if (moveDirection != Vector3.zero)
-            {
-                Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-            }
-
-            Vector3 targetPosition = transform.position + transform.TransformDirection(moveDirection) * speed * Time.deltaTime;
-            targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
-            transform.position = targetPosition;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Application.focusChanged -= OnApplicationFocus;
         }
+    }
 
-        void HandleRotationInput()
-        {
-            rotationX -= Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
-            rotationX = Mathf.Clamp(rotationX, -90, 90);
-            UnityEngine.Camera.main.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+    void MoveCamera()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime, 0);
-        }
+        float sprintMultiplier = Input.GetKey(KeyCode.LeftShift) ? this.sprintMultiplier : 1f;
+
+        Vector3 moveDirection = new Vector3(horizontal, 0f, vertical).normalized;
+        
+        currentMoveSpeed = Mathf.SmoothDamp(currentMoveSpeed, baseMoveSpeed * sprintMultiplier, ref velocity.y, accelerationTime);
+
+        transform.Translate(moveDirection * currentMoveSpeed * Time.deltaTime, Space.Self);
+
+        float ascentInput = Input.GetKey(KeyCode.Q) ? -1f : Input.GetKey(KeyCode.E) ? 1f : 0f;
+
+        Vector3 ascentDirection = new Vector3(0f, ascentInput, 0f).normalized;
+        transform.Translate(ascentDirection * ascentSpeed * Time.deltaTime, Space.World);
+    }
+
+    void RotateCamera()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * rotateSpeed;
+        float mouseY = -Input.GetAxis("Mouse Y") * rotateSpeed; // Инвертируем для корректного вращения по вертикали
+
+        // Вращение камеры вокруг оси Y (горизонталь)
+        transform.Rotate(Vector3.up, mouseX);
+
+        // Вращение камеры вокруг оси X (вертикаль)
+        transform.Rotate(Vector3.right, mouseY);
+        
+        // Убери вращение по Z (зануляем Z-компоненту вращения)
+        transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, 0f);
+    }
+
     }
 }
 

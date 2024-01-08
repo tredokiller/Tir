@@ -119,7 +119,7 @@ Material:
     - _Night_Color_Middle: {r: 0.007843138, g: 0.011764706, b: 0.019607844, a: 1}
     - _Night_Color_Top: {r: 0, g: 0, b: 0, a: 1}
     - _Stars_Speed: {r: -0.005, g: 0.005, b: 0, a: 0}
-    - _Sun_Direction: {r: 0.021771997, g: -0.9990515, b: -0.037711643, a: 0}
+    - _Sun_Direction: {r: 0.037061647, g: -0.9972492, b: -0.06419167, a: 0}
     - _Vector2: {r: 0, g: 0.01, b: 0, a: 0}
     - _Vector3: {r: 0, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
