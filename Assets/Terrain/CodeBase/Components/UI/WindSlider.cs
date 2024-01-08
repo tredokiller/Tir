@@ -1,5 +1,6 @@
 using CodeBase.Common.Configs;
 using CodeBase.Services.TerrainDataService;
+using Terrain.CodeBase.Services.TerrainDataService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,6 +41,7 @@ namespace CodeBase.Components.UI
             _terrainDataService.SetWavingGrassSpeed(value);
             _terrainDataService.SetWavingGrassStrength(value);
             _terrainDataService.SetWavingGrassAmount(value);
+            _terrainDataService.SetTreesWind(value);
         }
     }
 }

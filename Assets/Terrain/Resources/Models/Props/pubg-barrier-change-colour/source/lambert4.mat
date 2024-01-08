@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: lambert4
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 9c25ccac0210fa74aab22126ddd911c1,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -17,8 +18,7 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -26,6 +26,22 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 7962607e8de4266488d3c0127c77dced, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_AO_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_Emission_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_Metalic_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Base_Normal_Texture:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -64,6 +80,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Rain_Drop_Texture:
+        m_Texture: {fileID: 2800000, guid: cdde78b4f8fb34a469124a3daadc3043, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Rain_Puddle_Texture:
+        m_Texture: {fileID: 2800000, guid: 907057e1f9e72004caf4b03fa2dc7ee8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Rain_Texture:
+        m_Texture: {fileID: 2800000, guid: 3dbf1875ceadf1e429e27fb0d30e0354, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Snow_Smoothness_Texture:
+        m_Texture: {fileID: 2800000, guid: 4ae00120782b1b94ca5a1002f9e9ad25, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,6 +116,10 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _Base_AO_Strength: 1
+    - _Base_Metalic_Strength: 0.2
+    - _Base_Normal_Strength: 1
+    - _Base_Smoothness_Strength: 0.5
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -96,6 +132,8 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
+    - _General_Rain: 0
+    - _General_Snow: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -103,10 +141,28 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
+    - _Rain_Amount: 0
+    - _Rain_Drop_Distortion_Power: 2
+    - _Rain_Drop_Distortion_Scale: 2.5
+    - _Rain_Drop_Strength: 0.5
+    - _Rain_Puddle_Speed: 0.1
+    - _Rain_Puddle_Strength: 0.1
+    - _Rain_Puddle_Tiling: 0.3
+    - _Rain_Smoothness: 1
+    - _Rain_Speed: 16
+    - _Rain_Strength: 0.4
+    - _Rain_Tiling: 1
+    - _Rain_Variant: 1
     - _ReceiveShadows: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
+    - _Snow_Amount: 0
+    - _Snow_Blend_Distance: 0.1
+    - _Snow_Buildup_Noise_Size: 50
+    - _Snow_Color_Noise_Size: 250
+    - _Snow_Color_Noise_Strength: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -116,8 +172,15 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Base_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Base_Emission_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Base_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Base_Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Rain_Drop_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Snow_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Snow_Direction: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5026111122339481783
