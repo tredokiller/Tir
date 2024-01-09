@@ -1,4 +1,4 @@
-﻿namespace CodeBase.Common.Constants
+﻿namespace Terrain.CodeBase.Common.Constants
 {
     public abstract class DayTime
     {

@@ -1,6 +1,6 @@
 using CodeBase.Common.Configs;
-using CodeBase.Common.Constants;
 using CodeBase.Components.Sun_Component;
+using Terrain.CodeBase.Common.Constants;
 using UnityEngine;
 
 namespace Terrain.CodeBase.Components.Time_Changing

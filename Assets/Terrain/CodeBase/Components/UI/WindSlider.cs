@@ -1,10 +1,9 @@
 using CodeBase.Common.Configs;
-using CodeBase.Services.TerrainDataService;
 using Terrain.CodeBase.Services.TerrainDataService;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CodeBase.Components.UI
+namespace Terrain.CodeBase.Components.UI
 {
     public class WindSlider : MonoBehaviour
     {

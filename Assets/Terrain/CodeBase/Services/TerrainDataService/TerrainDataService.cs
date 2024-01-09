@@ -1,5 +1,5 @@
 ﻿using CodeBase.Services.TerrainDataService;
-using Unity.VisualScripting;
+using Terrain.CodeBase.Common.Constants;
 using UnityEngine;
 
 namespace Terrain.CodeBase.Services.TerrainDataService
@@ -43,8 +43,8 @@ namespace Terrain.CodeBase.Services.TerrainDataService
         {
             foreach (var material in _treeMaterials)
             {
-                material.SetFloat("_TumbleStrength", value);
-                material.SetFloat("_LeafTurbulence", Mathf.Clamp(value, 0, 4));
+                material.SetFloat(TerrainProperties.TumbleStrength, value);
+                material.SetFloat(TerrainProperties.LeafTurbulence, Mathf.Clamp(value, 0, 4));
             }
         }
     }
