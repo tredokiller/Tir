@@ -10,11 +10,9 @@ namespace Terrain.CodeBase.Components.Camera
         [SerializeField] private float _sprintMultiplier = 2f;
         [SerializeField] private float _accelerationTime = 1.5f;
         
-
         private Vector3 _velocity;
         private float _currentMoveSpeed;
-
-
+        
         private void Update()
         {
             MoveCamera();
