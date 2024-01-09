@@ -51,15 +51,5 @@ namespace Terrain.CodeBase.Components.Camera
             transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles.x,
                 transform.localRotation.eulerAngles.y, 0f);
         }
-
-        private void OnApplicationFocus(bool hasFocus)
-        {
-            if (!hasFocus)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                Application.focusChanged -= OnApplicationFocus;
-            }
-        }
     }
 }

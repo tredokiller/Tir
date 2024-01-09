@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Terrain.CodeBase.Components.CursorLocker
+namespace Terrain.CodeBase.Services.CursorLockerService
 {
-    public class CursorLockerService : MonoBehaviour
+    public class CursorService : MonoBehaviour
     {
         private bool _isCursorLocked = true;
         
@@ -40,6 +40,16 @@ namespace Terrain.CodeBase.Components.CursorLocker
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Application.focusChanged -= OnApplicationFocus;
+        }
+        
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            if (!hasFocus)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                Application.focusChanged -= OnApplicationFocus;
+            }
         }
     }
 }
